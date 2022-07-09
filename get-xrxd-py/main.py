@@ -8,8 +8,7 @@ from xrxd_struct import dumpXrxd
 
 def getXrxdPlainData():
     # 第一步：登录，获取 access_token
-    # loginUrl = 'http://datasrv.x07.top:8043/rpc/Login/LoginInterf/loginByUsername'
-    loginUrl = 'http://datasrv.x07.top:8070/rpc/Login/LoginInterf/loginByUsername'
+    loginUrl = 'http://datasrv.x07.top:8043/rpc/Login/LoginInterf/loginByUsername'
 
     headers = {'client-id': '1'}
     resp = requests.post(loginUrl, json={'username': 'test', 'password': 'testtest'}, headers=headers)
